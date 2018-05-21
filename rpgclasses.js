@@ -10,7 +10,10 @@ class Mage{
     return this.protect;
   }
 
-
+class WhiteMage extends Mage {
+  constructor(protect, heal){
+    super(protect);
+    this.heal = heal;} }
 
 
 }
