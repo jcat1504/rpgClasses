@@ -20,3 +20,4 @@ class BlackMage extends Mage{
   super(magicAttacks);
   this.ultima = ultima;}
 }
+}
