@@ -16,7 +16,7 @@ class WhiteMage extends Mage {
     this.heal = heal;} }
 
 class BlackMage extends Mage{
-  constructor(magicAttacks, ultima);
+  constructor(magicAttacks, ultima);{
   super(magicAttacks);
   this.ultima = ultima;}
 }
