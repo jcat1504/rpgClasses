@@ -21,3 +21,17 @@ class BlackMage extends Mage{
   this.ultima = ultima;}
 }
 }
+
+
+class Warrior{
+  constructor(attack, guard){
+    this.attack = attack;
+    this.guard = guard;
+  }
+  
+ get attack(){
+   return this.attack;
+ }
+ get guard(){
+   return this.guard;
+ }
