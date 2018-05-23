@@ -37,6 +37,13 @@ class Warrior{
  }
  get guard(){
    return this.guard;
- }
+ } }
 
+ class Paladin extends Warrior{
+   constructor(attack, guard, charge) {
+     super(attack, guard);
+     this.charge = charge;} }
+
+
+   
   
