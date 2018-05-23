@@ -1,13 +1,13 @@
 class Mage{
   constructor(magicAttacks, protect){
-    this.magicAttacks = magicAttacks;
-    this.protect = protect;
+    this._magicAttacks = magicAttacks;
+    this._protect = protect;
   }
   get magicAttacks(){
-    return this.magicAttacks;
+    return this._magicAttacks;
   }
   get protect(){
-    return this.protect;
+    return this._protect;
   }
 
 class WhiteMage extends Mage {
@@ -22,6 +22,9 @@ class BlackMage extends Mage{
 }
 }
 
+addMagic(newMagic){
+  this._magicAttacks.push(newMagic);}
+
 
 class Warrior{
   constructor(attack, guard){
@@ -35,3 +38,5 @@ class Warrior{
  get guard(){
    return this.guard;
  }
+
+  
