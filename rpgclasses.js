@@ -49,5 +49,17 @@ class Dragoon extends Warrior{
     super(attack);
     this.highJump = highJump; } }
 
-   
+ 
+class Thief {
+  constructor(steal, attack, haste){
+    this.steal = steal;
+    this.attack = attack;
+    this.haste = haste;}
+  get steal(){
+    return this.steal; }
+  get attack(){
+    return this.attack;}
+  get haste(){
+    return this.haste;}
+}
   
