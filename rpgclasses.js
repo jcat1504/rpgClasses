@@ -44,6 +44,10 @@ class Warrior{
      super(attack, guard);
      this.charge = charge;} }
 
+class Dragoon extends Warrior{
+  constructor(attack, highJump){
+    super(attack);
+    this.highJump = highJump; } }
 
    
   
