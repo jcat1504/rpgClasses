@@ -69,3 +69,7 @@ class Bandit extends Thief{
     this.shadowPartner = shadowPartner; } }
 
   
+class Assassin extends Thief {
+  constructor(steal, attack, lucky7s){
+    super(steal, attack);
+    this.lucky7s = lucky7s; } }
