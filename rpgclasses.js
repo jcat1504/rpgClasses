@@ -13,12 +13,12 @@ class Mage{
 class WhiteMage extends Mage {
   constructor(protect, heal){
     super(protect);
-    this.heal = heal;} }
+    this._heal = heal;} }
 
 class BlackMage extends Mage{
   constructor(magicAttacks, ultima);{
   super(magicAttacks);
-  this.ultima = ultima;}
+  this._ultima = ultima;}
 }
 }
 
@@ -28,48 +28,48 @@ addMagic(newMagic){
 
 class Warrior{
   constructor(attack, guard){
-    this.attack = attack;
-    this.guard = guard;
+    this._attack = attack;
+    this._guard = guard;
   }
   
  get attack(){
-   return this.attack;
+   return this_.attack;
  }
  get guard(){
-   return this.guard;
+   return this_.guard;
  } }
 
  class Paladin extends Warrior{
    constructor(attack, guard, charge) {
      super(attack, guard);
-     this.charge = charge;} }
+     this._charge = charge;} }
 
 class Dragoon extends Warrior{
   constructor(attack, highJump){
     super(attack);
-    this.highJump = highJump; } }
+    this._highJump = highJump; } }
 
  
 class Thief {
   constructor(steal, attack, haste){
-    this.steal = steal;
-    this.attack = attack;
-    this.haste = haste;}
+    this._steal = steal;
+    this._attack = attack;
+    this._haste = haste;}
   get steal(){
-    return this.steal; }
+    return this._steal; }
   get attack(){
-    return this.attack;}
+    return this._attack;}
   get haste(){
-    return this.haste;}
+    return this._haste;}
 }
 
 class Bandit extends Thief{
   constructor(steal, attack, shadowPartner){
     super(steal, attack);
-    this.shadowPartner = shadowPartner; } }
+    this._shadowPartner = shadowPartner; } }
 
   
 class Assassin extends Thief {
   constructor(steal, attack, lucky7s){
     super(steal, attack);
-    this.lucky7s = lucky7s; } }
+    this._lucky7s = lucky7s; } }
