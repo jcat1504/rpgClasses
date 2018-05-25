@@ -62,4 +62,10 @@ class Thief {
   get haste(){
     return this.haste;}
 }
+
+class Bandit extends Thief{
+  constructor(steal, attack, shadowPartner){
+    super(steal, attack);
+    this.shadowPartner = shadowPartner; } }
+
   
