@@ -25,6 +25,8 @@ class BlackMage extends Mage{
 addMagic(newMagic){
   this._magicAttacks.push(newMagic);}
 
+blackMage(blackMage.magicAttacks);
+
 
 class Warrior{
   constructor(attack, guard){
