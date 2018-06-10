@@ -56,7 +56,7 @@ class Thief {
   constructor(steal, attack, haste){
     this._steal = steal;
     this._attack = attack;
-    this._haste = haste;}
+    this._haste = haste; }
   get steal(){
     return this._steal; }
   get attack(){
@@ -68,7 +68,8 @@ class Thief {
 class Bandit extends Thief{
   constructor(steal, attack, shadowPartner){
     super(steal, attack);
-    this._shadowPartner = shadowPartner; } }
+    this._shadowPartner = shadowPartner;
+  this._daggerStrike = daggerStrike; } }
 
   
 class Assassin extends Thief {
