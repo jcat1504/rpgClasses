@@ -1,10 +1,11 @@
 class Mage{
   constructor(magicAttacks, protect){
-    this._magicAttacks = magicAttacks;
+    this._magicAttacks = 0;
     this._protect = protect;
   }
-  get magicAttacks(){
-    return this._magicAttacks;
+incrementMagicAttacks()
+  { this._magicAttacks ++;
+   
   }
   get protect(){
     return this._protect;
@@ -22,20 +23,17 @@ class BlackMage extends Mage{
 }
 }
 
-addMagic(newMagic){
-  this._magicAttacks.push(newMagic);}
 
 blackMage(blackMage.magicAttacks);
 
 
 class Warrior{
   constructor(attack, guard){
-    this._attack = attack;
+    this._attack = 0;
     this._guard = guard;
   }
-  
- get attack(){
-   return this_.attack;
+  incrementAttack(){
+    this._attack ++;
  }
  get guard(){
    return this_.guard;
@@ -55,12 +53,12 @@ class Dragoon extends Warrior{
 class Thief {
   constructor(steal, attack, haste){
     this._steal = steal;
-    this._attack = attack;
+    this._attack = 0;
     this._haste = haste; }
   get steal(){
     return this._steal; }
-  get attack(){
-    return this._attack;}
+  incrementAttack(){
+    this._attack ++;}
   get haste(){
     return this._haste;}
 }
